@@ -1,0 +1,23 @@
+<script src='@routes.Assets.versioned("public/lib/jsonforms/dist/jsonforms.js")'></script>
+<script src='@routes.Assets.versioned("public/lib/jsonforms/dist/jsonforms-bootstrap.js")'></script>
+<script src='@routes.Assets.versioned("javascripts/index.controller.js")'></script>
+<link rel='stylesheet' href='@routes.Assets.versioned("stylesheets/main.css")'/>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<body ng-app="my-app">
+<h1><strong>FullStack 2016 JSON Schema Demo</strong></h1>
+<div class="jsf">
+    <div ng-controller="DemoController as vm">
+        <pre>{{vm.data}}</pre>
+        <div ng-if="vm.resolved">
+            <jsonforms schema="vm.schema" data="vm.data"/>
+        </div>
+        <button type="button" class="btn" ng-click="vm.submit(vm.data)">
+            Submit
+        </button>
+        <span ng-class="vm.isError ? 'error' : 'success'">
+            {{vm.msg}}
+        </span>
+    </div>
+</div>
+</body>
+

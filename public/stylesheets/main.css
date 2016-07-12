@@ -1,0 +1,39 @@
+h1 {
+  color: #A1BD39;
+  font-style: italic;
+}
+
+body {
+  background-color: #1C1C1B;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-family: 'Raleway', sans-serif;
+}
+
+.jsf .form-control:focus {
+  border-color: #A1BD39;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(161, 189, 57, 0.6);
+}
+
+.jsf label {
+  color: #A1BD39
+}
+
+.jsf .alert-danger {
+  background-color: #F7DB40;
+  color: #1C1C1B;
+  border: 0
+}
+
+.jsf .btn {
+  background-color: #A1BD39;
+  color: #1C1C1B;
+}
+
+.error {
+  color: #B2160E
+}
+
+.success {
+  color: #A1BD39;
+}

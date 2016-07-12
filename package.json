@@ -1,0 +1,17 @@
+{
+  "name": "fullstack-json-schema-demo",
+  "version": "0.0.1",
+  "description": "FullStack 2016 Demo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonforms": "0.0.21"
+  }
+}
