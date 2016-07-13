@@ -6,6 +6,23 @@ angular.module(
 
      var vm = this;
      vm.resolved = false;
+     vm.uischema = {
+       "type": "HorizontalLayout",
+       "elements": [
+         {
+           "type": "Control",
+           "scope": {
+             "$ref": "#/properties/name"
+           }
+         },
+         {
+           "type": "Control",
+           "scope": {
+             "$ref": "#/properties/age"
+           }
+         }
+       ]
+     };
 
      $http.get('assets/schemas/person-schema.json')
        .then(function(res){
