@@ -7,11 +7,14 @@
 <h1><strong>FullStack 2016 JSON Schema Demo</strong></h1>
 <div class="jsf">
     <div ng-controller="DemoController as vm">
+        <label>
+            Data
+        </label>
         <pre>{{vm.data}}</pre>
         <div ng-if="vm.resolved">
             <jsonforms schema="vm.schema" data="vm.data"/>
         </div>
-        <button type="button" class="btn" ng-click="vm.submit(vm.data)">
+        <button type="button" class="btn pull-right" ng-click="vm.submit(vm.data)">
             Submit
         </button>
         <span ng-class="vm.isError ? 'error' : 'success'">
