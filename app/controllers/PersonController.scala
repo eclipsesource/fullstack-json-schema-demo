@@ -34,7 +34,7 @@ class PersonController @Inject()(app: Provider[Application], counter: Counter)(i
 
       validationResult match {
         case JsSuccess(person, _) =>
-          person.copy(id = Some(counter.nextCount()))
+          repo += person.copy(id = Some(counter.nextCount()))
           Ok("Person added")
         case JsError(errors) =>
           BadRequest(errors.toJson)
