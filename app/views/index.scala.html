@@ -1,9 +1,9 @@
 <script src='@routes.Assets.versioned("public/lib/jsonforms/dist/jsonforms.js")'></script>
-<script src='@routes.Assets.versioned("public/lib/jsonforms/dist/jsonforms-bootstrap.js")'></script>
+<script src='@routes.Assets.versioned("public/lib/jsonforms/dist/jsonforms-material.js")'></script>
 <script src='@routes.Assets.versioned("javascripts/index.controller.js")'></script>
 <link rel='stylesheet' href='@routes.Assets.versioned("stylesheets/main.css")'/>
 <body ng-app="my-app">
-<h1><strong>FullStack 2016 JSON Schema Demo</strong></h1>
+<h1><strong>WJAX 2016 JSON Schema Demo</strong></h1>
 <div class="jsf">
     <div ng-controller="DemoController as vm">
         <label>
@@ -13,9 +13,9 @@
         <div ng-if="vm.resolved">
             <jsonforms schema="vm.schema" data="vm.data"/>
         </div>
-        <button type="button" class="btn pull-right" ng-click="vm.submit(vm.data)">
+        <md-button type="button" class="md-primary md-raised" ng-click="vm.submit(vm.data)">
             Submit
-        </button>
+        </md-button>
         <span ng-class="vm.isError ? 'error' : 'success'">
             {{vm.msg}}
         </span>
