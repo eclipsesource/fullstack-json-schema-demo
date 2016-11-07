@@ -1,7 +1,6 @@
-
 angular.module(
   'my-app',
-  ['jsonforms', 'jsonforms-bootstrap']
+  ['jsonforms', 'jsonforms-material']
 ).controller('DemoController', function($http) {
 
      var vm = this;
