@@ -28,3 +28,4 @@ copyNodeModules := {
   IO.copyDirectory(node_modules,target, overwrite = true, preserveLastModified = true)
 }
 
+addCommandAlias("copyNpmToTarget", "copyNodeModules")
