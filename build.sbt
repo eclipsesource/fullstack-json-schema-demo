@@ -31,4 +31,3 @@ copyNodeModules := {
   IO.copyDirectory(node_modules,target, overwrite = true, preserveLastModified = true)
 }
 
-addCommandAlias("getNpmDeps", ";web-assets:jseNpmNodeModules;copyNodeModules")

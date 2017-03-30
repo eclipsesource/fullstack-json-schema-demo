@@ -1,6 +1,9 @@
-# Fullstack 2016 JSON Schema Demo
+# JSON Schema Demo
 
 ## Usage
-1. Navigate to the project directory and execute `./sbt`(this may take a while when executed for the first time; if necessary, execute `chmod 0755 sbt`)
-2. Once the command prompt is up, download any NPM dependencies by entering the `getNpmDeps` command
-3. Finally, start the application by entering `~run` (again, this may take a while on first start-up; the tilde enables on-the-fly re-compilation)
+1. Download and install node.js
+2. Clone this repository
+3. With the cloned repo directory, execute `npm install`
+4. Execute `./sbt`(this may take a while when executed for the first time; if necessary, execute `chmod 0755 sbt`)
+5. Once the command prompt is up, execute `copyNpmModules` to copy all NPM dependencies to the `target` folder 
+6. Finally, start the application by entering `~run` (again, this may take a while on first start-up; the tilde enables on-the-fly re-compilation)
