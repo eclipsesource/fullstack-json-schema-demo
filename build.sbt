@@ -12,10 +12,7 @@ libraryDependencies ++= Seq(
   jdbc,
   cache,
   ws,
-  "com.eclipsesource" %% "play-json-schema-validator" % "0.9.0",
-  "org.webjars" %% "webjars-play" % "2.6.0-M1",
-  "org.webjars" % "npm" % "4.2.0",
-  "org.webjars" % "angularjs" % "1.6.2"
+  "com.eclipsesource" %% "play-json-schema-validator" % "0.9.0"
 )
 
 resolvers += "emueller-bintray" at "http://dl.bintray.com/emueller/maven"
