@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jsonforms": "1.0.12"
+    "jsonforms": "1.4.2"
   }
 }
