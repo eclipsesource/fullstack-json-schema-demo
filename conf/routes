@@ -5,12 +5,13 @@
 GET     /                           controllers.HomeController.index
 
 # An example controller showing a sample home page
+#NOCSRF
 GET     /person                     controllers.PersonController.all
+#NOCSRF
 POST    /person                     controllers.PersonController.add
+#NOCSRF
 DELETE  /person/:id                 controllers.PersonController.remove(id: Int)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
-
-#GET     /webjars/*file              controllers.WebJarAssets.at(file)
 
