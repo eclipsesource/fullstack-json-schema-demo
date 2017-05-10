@@ -2,14 +2,9 @@
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
 
-GET     /                           controllers.HomeController.index
-
-# An example controller showing a sample home page
-#NOCSRF
+GET     /                           controllers.PersonController.index
 GET     /person                     controllers.PersonController.all
-#NOCSRF
 POST    /person                     controllers.PersonController.add
-#NOCSRF
 DELETE  /person/:id                 controllers.PersonController.remove(id: Int)
 
 # Map static resources from the /public folder to the /assets URL path
