@@ -9,10 +9,8 @@ scalaVersion := "2.12.1"
 JsEngineKeys.engineType := JsEngineKeys.EngineType.Node
 
 libraryDependencies ++= Seq(
-  jdbc,
-  cache,
-  ws,
-  "com.eclipsesource" %% "play-json-schema-validator" % "0.9.0"
+  "com.eclipsesource" %% "play-json-schema-validator" % "0.9.0",
+  "com.typesafe.play" %% "play-json" % "2.6.0-M5"
 )
 
 resolvers += "emueller-bintray" at "http://dl.bintray.com/emueller/maven"
