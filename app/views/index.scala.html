@@ -11,7 +11,7 @@
         </label>
         <pre>{{vm.data}}</pre>
         <div ng-if="vm.resolved">
-            <jsonforms schema="vm.schema" data="vm.data"/>
+            <jsonforms schema="vm.schema" data="vm.data" /> <--! uischema="vm.uischema" --/>
         </div>
         <md-button type="button" class="md-primary md-raised" ng-click="vm.submit(vm.data)">
             Submit

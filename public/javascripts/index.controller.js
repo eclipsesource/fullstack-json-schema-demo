@@ -6,7 +6,7 @@ angular.module(
      var vm = this;
      vm.resolved = false;
      vm.uischema = {
-       "type": "HorizontalLayout",
+       "type": "VerticalLayout",
        "elements": [
          {
            "type": "Control",
